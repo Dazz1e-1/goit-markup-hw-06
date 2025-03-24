@@ -294,7 +294,7 @@ img {
     padding-left: 52px;
     padding-right: 52px;
   }
-  .section-one .title {
+  .section-one .container .title {
     font-size: 36px;
     line-height: 1.11111;
     margin-bottom: 72px;
@@ -319,7 +319,11 @@ img {
     background-size: cover;
   }
   .section-one .container {
-    max-width: 496px;
+    padding-right: 136px;
+    padding-left: 136px;
+  }
+  .section-one .container .title {
+    font-size: 56px;
   }
 }
 
