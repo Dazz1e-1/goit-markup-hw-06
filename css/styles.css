@@ -567,6 +567,7 @@ img {
   }
   .section-three .container {
     padding: 0;
+    max-width: 768px;
   }
   .flex-team {
     justify-content: center;
@@ -856,7 +857,6 @@ img {
     width: 288px;
   }
 }
-
 /*TABLET*/
 
 @media screen and (min-width: 768px) and (max-width: 1157px) {
