@@ -867,7 +867,6 @@ img {
   .container.wrap {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     padding: 0;
     gap: 24px;
   }
