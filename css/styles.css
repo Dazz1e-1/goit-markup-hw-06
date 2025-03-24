@@ -52,7 +52,9 @@ img {
 /*#endregion*/
 
 /*#region header*/
-
+.page-header-container {
+  display: flex;
+}
 .page-header .container,
 .address-link-item,
 .page-nav,
@@ -157,11 +159,9 @@ img {
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .page-header {
-    max-width: 320px;
-  }
-  .page-header {
     margin: 0 auto;
-    padding: 16px 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -171,6 +171,7 @@ img {
     min-width: 115px;
     padding: 0;
     margin: 0;
+    padding-left: 16px;
   }
   .nav-link {
     display: none;
@@ -183,6 +184,7 @@ img {
     margin: 0;
     background-color: #ffffff;
     border: none;
+    padding-right: 16px;
   }
 }
 
@@ -191,12 +193,10 @@ img {
   .page-header {
     margin: 0 auto;
     max-width: 768px;
-    padding-left: 16px;
-    padding-right: 16px;
   }
   .container.header {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 16px;
+    padding-right: 16px;
   }
   .burger-icon {
     display: none;
@@ -220,6 +220,9 @@ img {
 }
 
 @media screen and (min-width: 1158px) {
+  .address-link .address-link-item {
+    display: flex;
+  }
   .burger-icon {
     display: none;
   }
@@ -279,7 +282,8 @@ img {
 @media screen and (min-resolution: 96dpi) and (min-width: 320px) and (max-width: 767px) {
   .section-one {
     max-width: 320px;
-    padding: 72px 52px;
+    padding-top: 72px;
+    padding-bottom: 72px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Dark-bg-mobile.jpg);
     background-size: cover;
   }
@@ -287,6 +291,8 @@ img {
     min-width: 216px;
     margin: auto;
     padding: 0;
+    padding-left: 52px;
+    padding-right: 52px;
   }
   .section-one .title {
     font-size: 36px;
@@ -307,12 +313,13 @@ img {
 @media screen and (min-resolution: 96dpi) and (min-width: 768px) and (max-width: 1157px) {
   .section-one.section {
     max-width: 768px;
-    padding: 112px 136px;
+    padding-top: 112px;
+    padding-bottom: 112px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/dark-bg-tablet.jpg);
     background-size: cover;
   }
   .section-one .container {
-    padding: 0;
+    max-width: 496px;
   }
 }
 
@@ -818,13 +825,15 @@ img {
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .footer-item {
-    padding: 96px 16px;
+    padding-top: 96px;
+    padding-bottom: 96px;
     margin: 0 auto;
   }
   .footer-item .container.wrap {
     display: block;
-    padding: 0;
     margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
   }
   .container .footer-container {
     margin: 0 auto;
@@ -861,14 +870,17 @@ img {
 
 @media screen and (min-width: 768px) and (max-width: 1157px) {
   .footer-item {
-    padding: 96px 164px 96px 108px;
     margin: 0 auto;
+    padding-top: 96px;
+    padding-bottom: 96px;
   }
-  .container.wrap {
+  .footer-item .container.wrap {
+    max-width: 768px;
     display: flex;
     flex-wrap: wrap;
-    padding: 0;
     gap: 24px;
+    padding-left: 108px;
+    padding-right: 164px;
   }
   .container .footer-container {
     margin: 0;
