@@ -586,13 +586,15 @@ img {
   }
   .section-three .container {
     padding: 0;
-    padding-left: 28px;
-    padding-right: 28px;
+    padding-left: 108px;
+    padding-right: 108px;
   }
   .flex-team {
     justify-content: center;
     row-gap: 64px;
     flex-wrap: wrap;
+    max-width: 768px;
+    margin: auto;
   }
 }
 
